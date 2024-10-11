@@ -1,0 +1,65 @@
+Inicio
+  |
+  v
+Cargar la página
+  |
+  v
+Llamar a `fetchLatestSensorData`
+  |
+  v
+Realizar solicitud HTTP GET a 'http://localhost:13000/api/medidasmike/escribir'
+  |
+  v
+¿Solicitud exitosa?
+  |        |
+  |        v
+  |    Manejo de errores
+  |        |
+  |        v
+  |    Mostrar mensaje de error en consola
+  |        
+  |        
+  v
+Convertir respuesta a formato JSON
+  |
+  v
+Inicializar variables: ozoneValue, ozoneTimestamp, temperatureValue, temperatureTimestamp
+  |
+  v
+Procesar datos obtenidos
+  |
+  v
+¿Sensor tipo 1?
+  |        |
+  |        v
+  |  Almacenar datos de ozono
+  |
+  v
+¿Sensor tipo 2?
+  |        |
+  |        v
+  |  Almacenar datos de temperatura
+  |
+  v
+Actualizar valores en la página
+  |
+  v
+¿ozoneValue no es null?
+  |        |
+  |        v
+  |   Mostrar 'No disponible'
+  |
+  v
+¿temperatureValue no es null?
+  |        |
+  |        v
+  |   Mostrar 'No disponible'
+  |
+  v
+Fin de la función
+  |
+  v
+Configurar intervalo para actualizar datos cada 5 segundos
+  |
+  v
+Repetir `fetchLatestSensorData`

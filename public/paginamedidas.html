@@ -1,19 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Página Dinámica</title>
-    <link rel="stylesheet" href="paginamedidas1.css">
+    <title>Medidas Miguel Proyecto 3º</title>
+    <link rel="stylesheet" href="/public/css/paginamedidas1.css">
 </head>
 <body>
     <div class="container">
-        <h1>Medidas Miguel Proyecto3º</h1>
+        <h1>Medidas Miguel Proyecto 3º</h1>
         <div class="content">
-            <p id="dynamic-text">Aquí aparecerá el texto dinámico:</p>
+            <h2>Resultados</h2>
+            <p>Ozono: <span id="ozonoValue">Cargando...</span></p>
+            <p>Hora de la medición de ozono: <span id="ozonoTimestamp">Cargando...</span></p>
+            <p>Temperatura: <span id="temperatureValue">Cargando...</span></p>
+            <p>Hora de la medición de Temperatura: <span id="temperatureTimestamp">Cargando...</span></p>
         </div>
     </div>
 
-    <script src="paginamedidas.js"></script>
+    <script src="/public/js/paginamedidas.js"></script>
 </body>
 </html>
